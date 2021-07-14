@@ -109,6 +109,7 @@ header .navbar .menu ul li ul.mega-menu {
   visibility: hidden;
   transform: translateY(50px);
   transition: all 0.4s ease-in;
+  z-index: 10;
 }
 header .navbar .menu ul li ul.mega-menu li {
   width: 24%;
@@ -199,6 +200,7 @@ header .navbar .social button {
   padding: 10px;
   font-size: 17px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 header .navbar .social button:hover {
@@ -253,6 +255,15 @@ header .navbar .social button:hover {
   height: 100%;
   background-position: center;
   background-size: cover;
+  animation: zoom 1s linear forwards;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 .slider-item .item .caption {
   position: relative;
@@ -306,4 +317,12 @@ header .navbar .social button:hover {
 .slider .controls .next:hover,
 .slider .controls .prev:hover {
   background: #c00;
+}
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
