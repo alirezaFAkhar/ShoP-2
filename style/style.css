@@ -615,6 +615,9 @@ header .navbar .social button:hover {
 #main #sidebar {
   width: 33%;
   box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.3);
+  height: 100%;
+  position: sticky;
+  top: 30px;
 }
 #sidebar .sidebar-container {
   width: 100%;
@@ -624,23 +627,125 @@ header .navbar .social button:hover {
   width: 24%;
   text-align: center;
 }
+#sidebar .sidebar-container .last-product-item:hover img {
+  transform: scale(1.1);
+}
 #sidebar .sidebar-container .last-product-item a img {
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 #sidebar .sidebar-container .last-product-item a h4 {
   color: #999;
 }
 #sidebar .sidebar-container .recent-bestseller {
   width: 100%;
+  padding: 15px 0;
 }
 #sidebar .sidebar-container .recent-bestseller .recent-item {
   width: 24%;
   padding: 10px 0;
   text-align: center;
 }
+#sidebar .sidebar-container .recent-bestseller .recent-item:hover img {
+  transform: scale(1.1);
+}
 #sidebar .sidebar-container .recent-bestseller .recent-item a img {
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 #sidebar .sidebar-container .recent-bestseller .recent-item a h4 {
   color: #999;
+}
+#sidebar .sidebar-container .labtop {
+  width: 100%;
+  padding: 15px 0;
+}
+#sidebar .sidebar-container .labtop .labtop-item {
+  width: 24%;
+  text-align: center;
+}
+#sidebar .sidebar-container .labtop .labtop-item:hover img {
+  transform: scale(1.1);
+}
+#sidebar .sidebar-container .labtop .labtop-item img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+#sidebar .sidebar-container .labtop .labtop-item h4 {
+  color: #999;
+}
+#sidebar .sidebar-container .sidebar-ads {
+  text-align: center;
+  padding: 40px 0;
+}
+/* suggested */
+.suggested {
+  width: 100%;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(7, 7, 32));
+  padding: 50px 0;
+}
+.suggested .suggested-title {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #fff;
+}
+.suggested .suggested-product {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.suggested .suggested-product .suggested-product-item {
+  width: 32%;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+.suggested .suggested-product .suggested-product-item a .offer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  padding: 5px;
+  background: #c00;
+  border-radius: 5px;
+}
+.suggested .suggested-product .suggested-product-item a {
+  display: block;
+}
+.suggested .suggested-product .suggested-product-item a img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.suggested .suggested-product .suggested-product-item a div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #000;
+}
+.suggested .suggested-product .suggested-product-item a div span {
+  color: #c00;
+  position: relative;
+}
+.suggested .suggested-product .suggested-product-item a div span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid black;
+}
+.suggested .suggested-product .suggested-product-item a h4 {
+  text-align: center;
+  padding: 10px 0;
+  color: #5c5c5c;
+}
+.suggested .suggested-product .suggested-product-item a h4 span {
+  font-family: "yekan";
+  margin-left: 5px;
+  color: green;
 }
